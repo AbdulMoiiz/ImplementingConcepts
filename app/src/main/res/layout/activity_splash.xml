@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1888FF"
+        android:orientation="vertical"
+        tools:context=".Topics.Splash">
+
+        <TextView
+            android:id="@+id/txtAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abdul_moiz"
+            android:textSize="34sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_gravity="center_horizontal"
+            android:rowCount="2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnTranslate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 1" />
+
+            <Button
+                android:id="@+id/btnAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 2" />
+
+            <Button
+                android:id="@+id/btnRotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 3" />
+
+            <Button
+                android:id="@+id/btnScale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 4" />
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+</layout>

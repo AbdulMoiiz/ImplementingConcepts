@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="color"
+            type="com.example.practice.MainActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/white">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leftCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="@id/center"
+            app:layout_constraintBottom_toBottomOf="@id/center"
+            app:layout_constraintEnd_toStartOf="@id/center"
+            android:background="@color/black">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rightCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@id/center"
+            app:layout_constraintTop_toTopOf="@id/center"
+            app:layout_constraintBottom_toBottomOf="@id/center"
+            android:background="@color/black">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rightRCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@id/rightCenter"
+            app:layout_constraintTop_toTopOf="@id/rightCenter"
+            app:layout_constraintBottom_toBottomOf="@id/rightCenter"
+            android:background="@color/white">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leftLCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="@id/leftCenter"
+            app:layout_constraintBottom_toBottomOf="@id/leftCenter"
+            app:layout_constraintEnd_toStartOf="@id/leftCenter"
+            android:background="@color/white">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toTopOf="@id/center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/black">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leftTopCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toStartOf="@id/topCenter"
+            app:layout_constraintBottom_toTopOf="@id/leftCenter"
+            android:background="@color/white">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rightTopCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@id/topCenter"
+            app:layout_constraintBottom_toTopOf="@id/rightCenter"
+            android:background="@color/white">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rightRTopCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@id/rightTopCenter"
+            app:layout_constraintTop_toTopOf="@id/rightTopCenter"
+            app:layout_constraintBottom_toBottomOf="@id/rightTopCenter"
+            android:background="@color/black">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leftLTopCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="@id/leftTopCenter"
+            app:layout_constraintBottom_toBottomOf="@id/leftTopCenter"
+            app:layout_constraintEnd_toStartOf="@id/leftTopCenter"
+            android:background="@color/black">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottomCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toBottomOf="@id/center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/black">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leftBottomCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toStartOf="@id/bottomCenter"
+            app:layout_constraintTop_toBottomOf="@id/leftCenter"
+            android:background="@color/white">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rightBottomCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@id/bottomCenter"
+            app:layout_constraintTop_toBottomOf="@id/rightCenter"
+            android:background="@color/white">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rightRBottomCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@id/rightBottomCenter"
+            app:layout_constraintTop_toBottomOf="@id/rightRCenter"
+            android:background="@color/black">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/leftLBottomCenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toStartOf="@id/leftBottomCenter"
+            app:layout_constraintTop_toBottomOf="@id/leftLCenter"
+            android:background="@color/black">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

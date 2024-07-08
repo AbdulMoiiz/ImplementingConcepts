@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "573759378317",
+    "project_id": "damo-9c08e",
+    "storage_bucket": "damo-9c08e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573759378317:android:a5b56ea9d7dbe853dc23c4",
+        "android_client_info": {
+          "package_name": "com.example.practice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB53T6nGkeEuo5hfwqxxkkBuEgM1WwJ6W4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

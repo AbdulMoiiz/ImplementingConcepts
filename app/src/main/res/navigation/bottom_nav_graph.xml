@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.practice.Topics.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="yourData"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_homeFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.practice.Topics.galleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment_to_slideshowFragment"
+            app:destination="@id/slideshowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/slideshowFragment"
+        android:name="com.example.practice.Topics.slideshowFragment"
+        android:label="fragment_slideshow"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_slideshowFragment_to_toolsFragment"
+            app:destination="@id/toolsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.example.practice.Topics.toolsFragment"
+        android:label="fragment_tools"
+        tools:layout="@layout/fragment_tools" />
+</navigation>
