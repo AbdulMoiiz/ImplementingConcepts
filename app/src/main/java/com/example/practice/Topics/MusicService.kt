@@ -46,7 +46,7 @@ class MusicService : Service() {
     }
 
     override fun onDestroy() {
-        if (::mplayer.isInitialized) {
+        if (this::mplayer.isInitialized) {
             mplayer.stop()
             mplayer.release()
         }

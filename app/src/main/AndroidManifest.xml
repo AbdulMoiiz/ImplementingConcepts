@@ -20,18 +20,31 @@
         android:theme="@style/Theme.Practice"
         tools:targetApi="31">
         <activity
-            android:name=".getting_pictures.CameraPictureActivity"
-            android:exported="true" >
+            android:name=".sensors.ProximitySensorActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".sensors.AccelerometerSensorActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-            android:name=".database.room_db.RoomLibraryActivity"
+            android:name=".audio_video.VideoActivity"
             android:exported="true"/>
-
+        <activity
+            android:name=".audio_video.AudioActivity"
+            android:exported="true" />
+        <activity
+            android:name=".getting_pictures.CameraPictureActivity"
+            android:exported="true" />
+        <activity
+            android:name=".database.room_db.RoomLibraryActivity"
+            android:exported="true" />
         <activity
             android:name=".database.sqlite_db.SqliteMainActivity"
             android:exported="true" />
@@ -82,10 +95,10 @@
             android:name=".notification.NotificationActivity"
             android:exported="true" />
         <activity
-            android:name=".alert_dialogbox.CustomDialogActivity"
+            android:name=".alert_dialog.CustomDialogActivity"
             android:exported="true" />
         <activity
-            android:name=".alert_dialogbox.AlertDialogActivity"
+            android:name=".alert_dialog.AlertDialogActivity"
             android:exported="true" />
         <activity
             android:name=".custom_toast.CustomToastActivity"
