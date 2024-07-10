@@ -26,7 +26,7 @@ class VideoActivity : AppCompatActivity() {
 
         binding.videoView.setVideoPath("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
         //setting path using user internal storage
-        binding.videoView.setVideoPath(Uri.parse("android.resource://" + packageName + "/" + R.raw.video).toString())
+//        binding.videoView.setVideoPath(Uri.parse("android.resource://" + packageName + "/" + R.raw.video).toString())
         val mediaController = MediaController(this)
         mediaController.setAnchorView(binding.videoView)
         binding.videoView.setMediaController(mediaController)
