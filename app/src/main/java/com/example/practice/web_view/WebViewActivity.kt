@@ -27,7 +27,7 @@ class WebViewActivity : AppCompatActivity() {
             insets
         }
 
-        binding.webView.loadUrl("https://www.google.com")
+        binding.webView.loadUrl("https://www.youtube.com/")
         binding.webView.webViewClient=object :WebViewClient(){
             override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
                 binding.progressBar.visibility= View.VISIBLE
@@ -46,7 +46,7 @@ class WebViewActivity : AppCompatActivity() {
     }
 
 
-    fun handleBackPress() {
+    private fun handleBackPress() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 if (binding.webView.canGoBack()) {
