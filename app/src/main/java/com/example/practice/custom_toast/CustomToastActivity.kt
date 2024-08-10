@@ -30,7 +30,7 @@ class CustomToastActivity : AppCompatActivity() {
             val bindingT: CustomToastBinding = CustomToastBinding.inflate(inflater)
 
             bindingT.txtMessage.setText("Message sent successfully!")
-            var toast = Toast(this)
+            val toast = Toast(this)
             toast.view = bindingT.root
             toast.duration = Toast.LENGTH_SHORT
             toast.setGravity(Gravity.BOTTOM or Gravity.CENTER, 0, -100)

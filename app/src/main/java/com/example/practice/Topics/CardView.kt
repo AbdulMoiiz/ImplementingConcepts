@@ -10,7 +10,7 @@ import com.example.practice.R
 import com.example.practice.databinding.ActivityCardViewBinding
 
 class CardView : AppCompatActivity() {
-    lateinit var dataBinding: ActivityCardViewBinding
+    private lateinit var dataBinding: ActivityCardViewBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

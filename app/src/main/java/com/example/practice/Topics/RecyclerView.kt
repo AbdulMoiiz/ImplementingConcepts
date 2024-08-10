@@ -11,8 +11,8 @@ import com.example.practice.R
 import com.example.practice.databinding.ActivityRecyclerViewBinding
 
 class RecyclerView : AppCompatActivity() {
-    lateinit var dataBinding: ActivityRecyclerViewBinding
-    var arrContacts:MutableList<ContactModel> = arrayListOf()
+    private lateinit var dataBinding: ActivityRecyclerViewBinding
+    private var arrContacts:MutableList<ContactModel> = arrayListOf()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
